@@ -1,6 +1,27 @@
 .hero {
+    padding: 0 5.6vw;
     background-image: url('../../dist/images/bgImageZombie.png');
-    min-height: 100vw;
-    background-size: contain;
+    height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+        &__content {
+            margin-top: 12%;
+            max-width: 50%;
+            width: 100%;
+            
+
+            .text--is-colored {
+                color: #655A48;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }

@@ -1,3 +1,4 @@
+@use 'variables.scss';
 @use 'header';
 @use 'hero';
 
@@ -8,7 +9,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-@mixin fontAndColor($color: #fff, $fontsize: 13px) {
+@mixin fontAndColor($color: variables.$textColorDefault, $fontsize: 13px) {
     color: $color;
     font-size: $fontsize;
 }
@@ -22,9 +23,27 @@
 }
 
 .title--small {
-    @include fontAndColor(#FBF6D4, 32px);
+    @include fontAndColor(variables.$titleColorDefault, 32px);
 }
 
 .title {
-    @include fontAndColor(#FBF6D4, 48px);
+    @include fontAndColor(variables.$titleColorDefault, 48px);
+}
+
+.button {
+    padding: 12px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: variables.$textColorDefault;
+    background-color: variables.$buttonBgColor;
+    border: none;
+    border: 4px solid  variables.$buttonBorderColor;
+    cursor: pointer;
+    width: 213px;
+
+    &:hover {
+        background-color: variables.$buttonBorderColor;
+    }
 }

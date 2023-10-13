@@ -1,23 +1,30 @@
 @use 'header';
+@use 'hero';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+@mixin fontAndColor($color: #fff, $fontsize: 13px) {
+    color: $color;
+    font-size: $fontsize;
 }
 
 .text--small {
-    font-size: 13px;
+    @include fontAndColor();
 }
 
 .text {
-    font-size: 16px;
+    @include fontAndColor($fontsize: 16px);
 }
 
 .title--small {
-    font-size: 32px;
+    @include fontAndColor(#FBF6D4, 32px);
 }
 
 .title {
-    font-size: 48px;
+    @include fontAndColor(#FBF6D4, 48px);
 }

@@ -1,0 +1,30 @@
+.header {
+    padding: 0 5.6vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    align-items: center;
+    padding-top: 10px;
+
+    &__nav {
+
+        &__list {
+            display: flex;
+            
+            &__item {
+                padding-right: 24px;
+                text-transform: uppercase;
+
+                &__link {
+                    text-decoration: none;
+                    font-weight: bold;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: #bababa;
+                    }
+                }
+            }
+        }
+    }
+}

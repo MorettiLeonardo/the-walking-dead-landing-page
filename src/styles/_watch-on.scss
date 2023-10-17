@@ -1,0 +1,14 @@
+@use 'variables.scss';
+
+.watch-on {
+    padding: 0 5.6vw;
+    background-color: variables.$bgPrimaryColor;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+
+    &__image {
+        max-width: 300px;
+        width: 100%;
+    }
+}

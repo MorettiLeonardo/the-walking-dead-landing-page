@@ -2,13 +2,32 @@
 
 .watch-on {
     padding: 0 5.6vw;
+    padding-top: 40px;
     background-color: variables.$bgPrimaryColor;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10%;
 
     &__image {
         max-width: 300px;
         width: 100%;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__title {
+            padding-bottom: 47px;
+        }
+
+        &__images {
+            padding-top: 16px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
 }

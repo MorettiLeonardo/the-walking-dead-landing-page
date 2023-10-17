@@ -26,6 +26,8 @@
 
 .title--small {
     @include fontAndColor(variables.$titleColorDefault, 32px);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
 }
 
 .title {

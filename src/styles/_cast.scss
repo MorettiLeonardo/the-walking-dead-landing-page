@@ -1,0 +1,22 @@
+@use 'variables.scss';
+
+.cast {
+    background-color: variables.$bgPrimaryColor;
+    padding: 0 5.6vw;
+    
+    &__title {
+        text-align: center;
+        padding-top: 103px;
+        padding-bottom: 50px;
+    }
+    
+    &__images {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        &__actors {
+            max-width: 193px;
+            width: 100%;
+        }
+    }
+}

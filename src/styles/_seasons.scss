@@ -1,0 +1,32 @@
+@use 'variables.scss';
+
+.seasons {
+    padding: 0 5.6vw;
+    background-color: variables.$bgPrimaryColor;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 58px;
+        padding-top: 103px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__title {
+                padding: 25px 0px;
+            }
+
+            &__descriptions {
+                padding: 0 25px;
+            }
+        }
+    }
+}

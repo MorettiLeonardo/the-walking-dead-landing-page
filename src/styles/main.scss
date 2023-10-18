@@ -33,6 +33,8 @@
 
 .title {
     @include fontAndColor(variables.$titleColorDefault, 48px);
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
 }
 
 .button {

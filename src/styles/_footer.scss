@@ -1,0 +1,15 @@
+@use 'variables.scss';
+
+.footer {
+    padding: 16px 5.6vw;
+    background-color: variables.$buttonBgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__copy {
+            padding-top: 8px;
+    }
+    
+}

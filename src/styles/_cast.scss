@@ -14,9 +14,18 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
 
+        @media (max-width: 1023px) {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
         &__actors {
             max-width: 193px;
             width: 100%;
+
+            @media (max-width: 1023px) {
+                max-width: auto;
+            }
         }
     }
 }

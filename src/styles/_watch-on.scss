@@ -8,9 +8,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 100px;
 
+    @media (max-width:1023px) {
+        gap: 40px;
+    }
+
     &__image {
         max-width: 400px;
         width: 100%;
+        
+        @media (max-width:1023px) {
+            max-width: 200px;
+        }
     }
 
     &__content {
@@ -19,6 +27,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media (max-width: 1023px) {
+            width: 300px;
+            padding: 0;
+        }
 
         &__title {
             padding-bottom: 47px;
@@ -30,6 +43,13 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+        
+            @media (max-width: 1023px) {
+                max-width: 200px;
+                gap: 16px;
+                margin: 0;
+                justify-content: space-between;
+            }
         }
     }
 }

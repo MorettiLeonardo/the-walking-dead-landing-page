@@ -9,13 +9,28 @@
     align-items: end;
     justify-content: end;
 
+    @media (max-width: 1023px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     &__images {
         width: 100%;
         max-width: 400px;
         margin-right: 16px;
+
+        @media (max-width: 1023px) {
+            margin: 0;
+        }
     }
 
     &__description {
+        &__title {
+            @media (max-width: 1023px) {
+                margin-top: 16px;
+            }
+        }
+
         &__text {
             margin-top: 30px;
         }

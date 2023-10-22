@@ -10,6 +10,20 @@
 
     @media (max-width:1023px) {
         gap: 40px;
+        width: auto;
+    }
+    
+    @media (max-width:871px) {
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+    }
+
+    @media (max-width:400px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 16px;
     }
 
     &__image {
@@ -19,37 +33,48 @@
         @media (max-width:1023px) {
             max-width: 200px;
         }
-    }
 
+    }
+    
     &__content {
         width: 100%;
         padding: 0 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-
+        
         @media (max-width: 1023px) {
-            width: 300px;
+            width: auto;
             padding: 0;
         }
 
         &__title {
             padding-bottom: 47px;
         }
-
+        
         &__images {
             max-width: 400px;
             padding-top: 16px;
             display: flex;
             justify-content: space-around;
             align-items: center;
-        
+            
             @media (max-width: 1023px) {
                 max-width: 200px;
                 gap: 16px;
                 margin: 0;
                 justify-content: space-between;
             }
+        }
+    }
+    .daryl {
+        @media (max-width: 871px) {
+            display: none;
+        }
+    }
+    .logo__images {
+        @media (max-width: 871px) {
+            width: 30%;
         }
     }
 }

@@ -55,4 +55,9 @@
     &:hover {
         background-color: variables.$buttonBorderColor;
     }
+
+    @media (max-width: 400px) {
+        width: 130px;
+        font-size: 14px;
+    }
 }

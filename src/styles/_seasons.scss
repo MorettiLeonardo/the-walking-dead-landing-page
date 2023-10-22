@@ -16,10 +16,22 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
 
+        @media (max-width: 900px) {
+            width: auto;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
         &__content {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media (max-width: 400px) {
+                flex-wrap: wrap;
+                align-items: flex-start;
+                padding-bottom: 32px;
+            }
 
             &__title {
                 padding: 25px 0px;

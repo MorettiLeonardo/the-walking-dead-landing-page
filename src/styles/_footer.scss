@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    @media (max-width: 1023px) {
+        text-align: center;
+    }
 
     &__copy {
             padding-top: 8px;

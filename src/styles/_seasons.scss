@@ -27,14 +27,16 @@
             justify-content: center;
             align-items: center;
 
-            @media (max-width: 400px) {
+            @media (max-width: 490px) {
                 flex-wrap: wrap;
-                align-items: flex-start;
                 padding-bottom: 32px;
             }
-
+            
             &__title {
                 padding: 25px 0px;
+                @media (max-width: 490px) {
+                    text-align: center;
+                }
             }
 
             &__descriptions {

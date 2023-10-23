@@ -1,3 +1,2 @@
-##Landing Page com o tema do The Walking Dead
-##O site foi feito com as seguintes tecnologias: HTML, SASS, GULP, Javascript e também foi aplicado boas práticas SMACSS.
+Landing Page com o tema do The Walking Dead. O site foi feito com as seguintes tecnologias: HTML, SASS, GULP, Javascript e também foi aplicado boas práticas SMACSS.
 Deploy: https://the-walking-dead-landing-page.vercel.app/
